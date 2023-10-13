@@ -104,7 +104,7 @@ const page = () => {
                         <div className='mx-auto grid grid-cols-2 py-10'>
 
                             {services && services.map((list, index) => (
-                                <div key={list.name} className='grid grid-cols-2'>
+                                <div key={list} className='grid grid-cols-2'>
                                     <div className='m-auto text-left'>
                                         <Image src={list.imageUrl} width='25' height='25' alt='/' />
                                     </div>
@@ -128,7 +128,7 @@ const page = () => {
                         <div className='grid md:grid-cols-3 grid-cols-1 gap-2 px-1'>
 
                             {DigitalServices && DigitalServices.map((listTwo, index) => (
-                                <div key={listTwo.name} className="md:w-[175px] md:py-1 hover:border-[#75EAE2] border-2 bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
+                                <div key={listTwo} className="md:w-[175px] md:py-1 hover:border-[#75EAE2] border-2 bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                                     <div className="p-1">
                                         {listTwo.imageUrl &&
                                             <div className='flex justify-center'>
@@ -172,7 +172,7 @@ const page = () => {
                         <div className='grid md:grid-cols-3 grid-cols-1 gap-2 px-1'>
 
                             {StreamlinedDevelopment && StreamlinedDevelopment.map((listThree, index) => (
-                                <div key={listThree.name} className="md:w-[175px] md:py-1 bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden hover:border-[#75EAE2] border-2">
+                                <div key={listThree} className="md:w-[175px] md:py-1 bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden hover:border-[#75EAE2] border-2">
                                     <div className="p-2">
                                         {listThree.imageUrl &&
                                             <div className='flex justify-center'>
@@ -207,7 +207,7 @@ const page = () => {
                         <div className="grid md:grid-cols-2 grid-cols-2 px-4">
 
                             {cuttingAdege && cuttingAdege.map((listFour, index) => (
-                            <div className="w-full px-4">
+                            <div key={listFour} className="w-full px-4">
                                 <div className="mb-8 rounded-[20px] bg-white">
                                     <div className="bg-primary flex h-[60px] w-[70px] items-center justify-start rounded-2xl">
                                             {listFour.imageUrl &&

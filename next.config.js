@@ -2,9 +2,14 @@
 const nextConfig = {
   output: "export",
 trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
+reactStrictMode: true,
+swcMinify: true,
+images: {
+unoptimized: true,
+dangerouslyAllowSVG: true,
+contentDispositionType: 'attachment',
+contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+}
 };
 
 module.exports = nextConfig

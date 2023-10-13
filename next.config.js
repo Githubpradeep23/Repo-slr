@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-trailingSlash: true,
-reactStrictMode: true,
+
 swcMinify: true,
 images: {
 unoptimized: true,
 dangerouslyAllowSVG: true,
-contentDispositionType: 'attachment',
-contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+
 }
+  trailingSlash: true,
+reactStrictMode: true,
 };
 
 module.exports = nextConfig

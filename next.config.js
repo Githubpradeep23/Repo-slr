@@ -7,7 +7,7 @@ images: {
 unoptimized: true,
 dangerouslyAllowSVG: true,
 
-}
+},
   trailingSlash: true,
 reactStrictMode: true,
 };

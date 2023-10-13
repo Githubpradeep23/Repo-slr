@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-images: {
-unoptimized: true,
-},
-trailingSlash: true,
-reactStrictMode: true,
+  basePath: "",
+  output: "standalone",
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: ["localhost", "localhost:3000", "https://githubpradeep23.github.io/web-slr/"],
+  },
 };
 
 module.exports = nextConfig
